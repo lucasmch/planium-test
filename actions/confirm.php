@@ -9,10 +9,8 @@ if (isset($_POST['btnConfirm'])) { #VERIFICA SE HOUVE O METHODO POST
 
     $planData = getPlan($planSelected);
     if (!$planData) { #VERIFICA SE O NÃO PLANO EXISTE
-        echo "NÃO EXISTE O PLANO";
-    }
-    if ($beneficiariesQuantity <= 0) { #VERIFICA SE NÃO TEM PARTICIPANTES 
-        echo "SEM CLIENTES";
+        header("Location: ../index.html");
+        die();
     }
 
     /* SALVAR BENEFICIARIOS.JSON */
@@ -34,9 +32,7 @@ if (isset($_POST['btnConfirm'])) { #VERIFICA SE HOUVE O METHODO POST
     $totalValue = 0;
     $propostaJson->ValorTotal = $totalValue;
     for ($i = 0; $i < $beneficiariesQuantity; $i++) {
-        if ($beneficiariesAge[$i] < 0 ) {
-            echo "IDADE INVALIDA";
-        } elseif ($beneficiariesAge[$i] <= 17) {
+        if ($beneficiariesAge[$i] <= 17 && $beneficiariesAge[$i] >= 0) {
             $valor = intval($price->faixa1);
         } elseif ($beneficiariesAge[$i] <= 40) {
             $valor = intval($price->faixa2);
