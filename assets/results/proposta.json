@@ -1,0 +1,41 @@
+{
+    "ValorTotal": 70,
+    "beneficiarios": [
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Lucas",
+            "idade": 10,
+            "valor": 9
+        },
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Gabriel",
+            "idade": 20,
+            "valor": 11
+        },
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Machado",
+            "idade": 30,
+            "valor": 11
+        },
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Ana",
+            "idade": 40,
+            "valor": 11
+        },
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Silva",
+            "idade": 50,
+            "valor": 14
+        },
+        {
+            "plano": "Bitix Customer Plano 1",
+            "nome": "Gatosa",
+            "idade": 60,
+            "valor": 14
+        }
+    ]
+}
